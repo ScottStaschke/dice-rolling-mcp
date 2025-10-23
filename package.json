@@ -20,7 +20,10 @@
     "pre-commit": "lint-staged",
     "build:mcp": "tsc",
     "start:mcp": "node dist/index.js",
-    "dev:mcp": "tsx watch src/index.ts"
+    "dev:mcp": "tsx watch src/index.ts",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "engines": {
     "node": ">=18.0.0"
