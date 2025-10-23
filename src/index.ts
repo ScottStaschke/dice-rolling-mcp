@@ -47,6 +47,10 @@ server.setRequestHandler(ListToolsRequestSchema, async () => ({
     {
       name: 'search',
       description: 'Search dice rolling documentation, guides, and examples',
+      annotations: {
+        readOnlyHint: true,
+        openWorldHint: true
+      },
       inputSchema: {
         type: 'object',
         properties: {
@@ -61,6 +65,10 @@ server.setRequestHandler(ListToolsRequestSchema, async () => ({
     {
       name: 'fetch',
       description: 'Retrieve detailed content for a specific dice rolling topic by ID',
+      annotations: {
+        readOnlyHint: true,
+        openWorldHint: true
+      },
       inputSchema: {
         type: 'object',
         properties: {
@@ -75,6 +83,10 @@ server.setRequestHandler(ListToolsRequestSchema, async () => ({
     {
       name: 'dice_roll',
       description: 'Roll dice using standard notation. IMPORTANT: For D&D advantage use "2d20kh1" (NOT "2d20")',
+      annotations: {
+        readOnlyHint: true,
+        openWorldHint: true
+      },
       inputSchema: {
         type: 'object',
         properties: {
@@ -91,6 +103,10 @@ server.setRequestHandler(ListToolsRequestSchema, async () => ({
     {
       name: 'dice_validate',
       description: 'Validate and explain dice notation without rolling. Use this to understand what notation means before rolling',
+      annotations: {
+        readOnlyHint: true,
+        openWorldHint: true
+      },
       inputSchema: {
         type: 'object',
         properties: {
