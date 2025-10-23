@@ -6835,7 +6835,7 @@ workerd@^1.20250927.0, workerd@1.20251011.0:
     "@cloudflare/workerd-linux-arm64" "1.20251011.0"
     "@cloudflare/workerd-windows-64" "1.20251011.0"
 
-wrangler@^4.38.0:
+wrangler@^4.38.0, wrangler@^4.44.0:
   version "4.44.0"
   resolved "https://registry.npmjs.org/wrangler/-/wrangler-4.44.0.tgz"
   integrity sha512-BLOUigckcWZ0r4rm7b5PuaTpb9KP9as0XeCRSJ8kqcNgXcKoUD3Ij8FlPvN25KybLnFnetaO0ZdfRYUPWle4qw==
